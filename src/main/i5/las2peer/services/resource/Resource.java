@@ -71,7 +71,7 @@ public class Resource extends RESTService {
 
   @Api
   @SwaggerDefinition(
-      info = @Info(title = "183", version = "0.0.0",
+      info = @Info(title = "183", version = "",
           description = "Test description for swagger.",
           termsOfService = "",
           contact = @Contact(name = "", email = "CAEAddress@gmail.com") ,
@@ -116,11 +116,11 @@ public class Resource extends RESTService {
     // resp
     boolean resp_condition = true;
     if(resp_condition) {
-      JSONObject result = new classes().new SchemaTest().toJSON();
+      JSONObject result2 = new classes().new SchemaTest().toJSON();
 
       
 
-      return Response.status(HttpURLConnection.HTTP_OK).entity(result.toJSONString()).build();
+      return Response.status(HttpURLConnection.HTTP_OK).entity(result2.toJSONString()).build();
     }
     return null;
   }

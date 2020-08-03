@@ -71,8 +71,8 @@ public class Resource extends RESTService {
 
   @Api
   @SwaggerDefinition(
-      info = @Info(title = "183", version = "0.0.0",
-          description = "Test description for swagger.",
+      info = @Info(title = "183", version = "",
+          description = "Test description of widget",
           termsOfService = "",
           contact = @Contact(name = "", email = "CAEAddress@gmail.com") ,
           license = @License(name = "BSD",
@@ -89,7 +89,7 @@ public class Resource extends RESTService {
    * 
    *
    * 
-   * @return Response Description of node.
+   * @return Response Description of a node.
    * 
    */
   @GET
@@ -97,7 +97,7 @@ public class Resource extends RESTService {
   @Produces(MediaType.APPLICATION_JSON)
   @Consumes(MediaType.TEXT_PLAIN)
   @ApiResponses(value = {
-       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "Description of node.")
+       @ApiResponse(code = HttpURLConnection.HTTP_OK, message = "Description of a node.")
   })
   @ApiOperation(value = "m1", notes = " ")
   public Response m1() {
@@ -116,11 +116,11 @@ public class Resource extends RESTService {
     // resp
     boolean resp_condition = true;
     if(resp_condition) {
-      JSONObject result2 = new classes().new SchemaTest().toJSON();
+      JSONObject result = new classes().new FirstSchema().toJSON();
 
       
 
-      return Response.status(HttpURLConnection.HTTP_OK).entity(result2.toJSONString()).build();
+      return Response.status(HttpURLConnection.HTTP_OK).entity(result.toJSONString()).build();
     }
     return null;
   }

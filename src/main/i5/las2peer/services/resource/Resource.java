@@ -113,9 +113,9 @@ public class Resource extends RESTService {
 
 
 
-    // resp
-    boolean resp_condition = true;
-    if(resp_condition) {
+    // resp2
+    boolean resp2_condition = true;
+    if(resp2_condition) {
       JSONObject result2 = new classes().new FirstSchema().toJSON();
 
       

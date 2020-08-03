@@ -116,11 +116,11 @@ public class Resource extends RESTService {
     // resp
     boolean resp_condition = true;
     if(resp_condition) {
-      JSONObject result = new classes().new FirstSchema().toJSON();
+      JSONObject result2 = new classes().new FirstSchema().toJSON();
 
       
 
-      return Response.status(HttpURLConnection.HTTP_OK).entity(result.toJSONString()).build();
+      return Response.status(HttpURLConnection.HTTP_OK).entity(result2.toJSONString()).build();
     }
     return null;
   }
